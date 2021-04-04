@@ -9,7 +9,7 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 
 let selectTheme = document.querySelector(".selectTheme");
 
-let valueTheme = selectTheme.value;
+// let valueTheme = selectTheme.value;
 localStorage.theme = 'dark';
 
 console.log(localStorage)
