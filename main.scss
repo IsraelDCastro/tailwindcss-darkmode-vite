@@ -1,0 +1,16 @@
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import './scss/card.scss';
+
+body {
+  font-family: Avenir;
+  @apply bg-blue-50 dark:bg-blue-900;
+}
+
+.container {
+  @apply w-full max-h-full h-screen flex flex-col justify-center items-center;
+}
+
+@import "tailwindcss/utilities";
