@@ -8,8 +8,9 @@ module.exports = {
       }
     },
   },
-  variants: {
-    extend: {},
-  },
+  variants: [
+    'dark',
+    'dark-hover'
+  ],
   plugins: [],
 }

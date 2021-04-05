@@ -4,6 +4,9 @@
 
 @import './scss/card.scss';
 
+* {
+  @apply transition-all duration-500 ease-in-out;
+}
 body {
   font-family: Avenir;
   @apply bg-blue-50 dark:bg-blue-900;
