@@ -1,0 +1,35 @@
+.card {
+  @apply sm:w-6/12 lg:w-3/12 rounded-md shadow-xl bg-white text-gray-800 dark:bg-gray-900 dark:text-white;
+  .card-img {
+    @apply overflow-hidden relative rounded-tl-md rounded-tr-md;
+    .like {
+      @apply flex justify-center items-center w-8 h-8 pt-1 cursor-pointer rounded-full bg-black text-white leading-none text-lg opacity-40 absolute top-0 right-0 mt-3 mr-3;
+    }
+  }
+  .card-body {
+    @apply p-6;
+    .card-title {
+      @apply font-bold text-2xl mb-2;
+    }
+    p {
+      @apply leading-tight text-gray-600 dark:text-white;
+    }
+    .price {
+      @apply mt-4 text-lg font-bold text-blue-500 dark:text-pink-400;
+    }
+  }
+  .card-footer {
+    @apply border-t border-gray-400 border-opacity-30 p-6 flex justify-between items-center;
+    .btn {
+      @apply px-4 py-2 font-medium bg-gray-200 transition-all duration-300 ease-in-out;
+      &.btn-primary {
+        @apply bg-blue-500 bg-opacity-80 text-white;
+        &:hover { @apply bg-opacity-100;}
+      }
+      &.btn-outline-primary {
+        @apply bg-transparent border border-blue-500 text-blue-500;
+        &:hover { @apply bg-blue-500 text-white; }
+      }
+    }
+  }
+}
