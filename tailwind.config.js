@@ -1,6 +1,8 @@
 module.exports = {
-  purge: ['./**/*.html'],
-  darkMode: 'class', // or 'media' or 'class'
+  purge: ['./*.html'],
+  // purge: [],
+  darkMode: 'class',
+  mode: 'jit',
   theme: {
     extend: {
       boxShadow: {
@@ -12,5 +14,7 @@ module.exports = {
     'dark',
     'dark-hover'
   ],
-  plugins: [],
+  plugins: [
+    require('tailwindcss-dark-mode')(),
+  ],
 }
