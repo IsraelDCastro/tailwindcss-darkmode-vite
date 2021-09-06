@@ -1,0 +1,114 @@
+.card-tours {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem
+}
+
+.card.card-tour {
+  margin-bottom: 4rem
+}
+
+.card.card-tour .card-image {
+  height: 24rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+.card.card-tour:nth-child(1) .card-image {
+  background-image: url('https://allpuntacanatours.com/wp-content/uploads/2021/07/punta-cana-transfer-hoyo-azul-blue-hole-2.jpeg')
+}
+
+.card.card-tour:nth-child(2) .card-image {
+  background-image: url('https://allpuntacanatours.com/wp-content/uploads/2021/07/buggy-punta-cana.jpeg')
+}
+
+.card.card-tour:nth-child(3) .card-image {
+  background-image: url('https://allpuntacanatours.com/wp-content/uploads/2021/08/atv-tour.jpeg')
+}
+
+.card.card-tour:nth-child(4) .card-image {
+  background-image: url('https://allpuntacanatours.com/wp-content/uploads/2021/07/polaris-punta-cana.jpeg')
+}
+
+.card.card-tour .card-content {
+  margin: -4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 91.666667%;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  padding: 1.25rem;
+  --tw-shadow: 0 3px 20px rgb(32 51 65 / 5%);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.card.card-tour .card-content h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600
+}
+
+.card.card-tour .card-content .price {
+  margin-bottom: 1rem;
+  font-weight: 600
+}
+
+.card.card-tour .card-content .price span {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(37, 99, 235, var(--tw-text-opacity))
+}
+
+.card.card-tour .card-btn {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 116, 36, var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 116, 36, var(--tw-bg-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.card.card-tour .card-btn:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 100, 10, var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 100, 10, var(--tw-bg-opacity))
+}
+
+@media (min-width: 768px) {
+  .card-tours {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-tours {
+    grid-template-columns: repeat(4, minmax(0, 1fr))
+  }
+  .card.card-tour {
+    margin-bottom: 0px
+  }
+}

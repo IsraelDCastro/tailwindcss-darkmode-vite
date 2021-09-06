@@ -1,0 +1,39 @@
+.card-tours {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8;
+}
+
+.card.card-tour {
+  @apply lg:mb-0 mb-16;
+}
+.card.card-tour .card-image {
+  @apply w-full overflow-hidden bg-center bg-no-repeat bg-cover rounded-lg h-96;
+}
+.card.card-tour:nth-child(1) .card-image {
+  @apply bg-scape-park;
+}
+.card.card-tour:nth-child(2) .card-image {
+  @apply bg-adventure-buggy;
+}
+.card.card-tour:nth-child(3) .card-image {
+  @apply bg-atv-tour;
+}
+.card.card-tour:nth-child(4) .card-image {
+  @apply bg-polaris-tour;
+}
+.card.card-tour .card-content {
+  @apply w-11/12 p-5 mx-auto -m-16 bg-white rounded-lg shadow-base;
+}
+.card.card-tour .card-content h4 {
+  @apply mb-2 text-2xl font-semibold;
+}
+.card.card-tour .card-content .price {
+  @apply mb-4 font-semibold;
+}
+.card.card-tour .card-content .price span {
+  @apply text-xl font-bold text-blue-600;
+}
+.card.card-tour .card-btn {
+  @apply inline-block w-full px-5 py-2 text-center text-white transition-all duration-500 ease-in-out border-2 rounded cursor-pointer bg-primary hover:bg-primary-100 border-primary hover:border-primary-100;
+}
+
+/*# sourceMappingURL=card.css.map */

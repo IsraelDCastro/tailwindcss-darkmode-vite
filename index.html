@@ -4,12 +4,65 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <title>Card Light/Dark mode</title>
   </head>
   <body>
-    <div class="container bg-blue-200 dark:bg-blue-500">
+    <div class="container bg-blue-20">
+      <div class="card-tours">
+        <div class="card card-tour">
+          <div class="card-image"></div>
+          <div class="card-content">
+            <h4>Scape Park</h4>
+            <h5 class="price">
+              From: <span>USD $ 69 to 129</span>
+            </h5>
+            <a href="https://allpuntacanatours.com/product/scape-park/" class="card-btn">
+              Book now!
+            </a>
+          </div>
+        </div>
+        <div class="card card-tour">
+          <div class="card-image"></div>
+          <div class="card-content">
+            <h4>Adventure Buggy</h4>
+            <h5 class="price">
+              From: <span>USD $ 45 to 180</span>
+            </h5>
+            <a href="https://allpuntacanatours.com/product/adventure-buggy-excursion/" class="card-btn">
+              Book now!
+            </a>
+          </div>
+        </div>
+        <div class="card card-tour">
+          <div class="card-image"></div>
+          <div class="card-content">
+            <h4>ATV Tour</h4>
+            <h5 class="price">
+              From: <span>USD $ 60 to 85</span>
+            </h5>
+            <a href="https://allpuntacanatours.com/product/atv-tour/" class="card-btn">
+              Book now!
+            </a>
+          </div>
+        </div>
+        <div class="card card-tour">
+          <div class="card-image"></div>
+          <div class="card-content">
+            <h4>Polaris Tour</h4>
+            <h5 class="price">
+              From: <span>USD $ 80 to 115</span>
+            </h5>
+            <a href="https://allpuntacanatours.com/product/polaris-tour/" class="card-btn">
+              Book now!
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container hidden bg-blue-200 dark:bg-blue-500">
       <div class="field">
-        <select class="selectTheme mb-6 px-4 py-2 border-0">
+        <select class="px-4 py-2 mb-6 border-0 selectTheme">
           <option value="light">Light</option>
           <option value="dark">Dark</option>
         </select>
